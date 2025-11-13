@@ -13,8 +13,14 @@ func main (){
 		i = i +1
 	}
 
+	// classic or loop
 	for i:=1; i<=1000; i++ {
 		fmt.Println("Number:",i)
+	}
+
+	// infinite for loop
+	for {
+		fmt.Println("Namasta")
 	}
 
 }

@@ -24,4 +24,24 @@ func main() {
 	default:
 		fmt.Println("Today is workday ")
 	}
+
+
+	// type switch
+	name := func (i interface{})  {
+		switch t := i.(type) {
+		case string:
+			fmt.Println("String", t)
+		case bool:
+			fmt.Println("Boolean")
+		case int:
+			fmt.Println("Number")
+		}
+	}
+
+	name(true) // bool
+	name("Ram")
+	name(22)
 }
+
+
+
